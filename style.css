@@ -1,0 +1,105 @@
+/* style.css */
+.my-card {
+  background-color: rgb(236, 229, 220);
+  border-radius: 1rem;          
+  padding: 1.25rem;             
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  
+}
+
+.invitation-title {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  color: #2a7cb3;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.1);
+}
+
+#invitation-text {
+  font-family: 'Baloo 2', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-weight: 800;             
+  font-size: 1.25rem;
+  color: #0c2a63;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.35;
+}
+.my-btn{
+    background-color: #2a7cb3;
+    color: white;
+    transition: all 0, 3s ease;
+    font-family: 'Baloo 2', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    padding: 1vw;
+}
+
+.my-btn:hover {
+    background-color: #1b5e8c;
+    color: white;
+    text-decoration: none;
+}
+.my-btn:active {   
+    background-color: #134363;
+
+    transform: scale(0.98);
+}
+.bounce-img {
+  animation: bounceRotate 2.5s infinite ease-in-out;
+
+}
+
+
+@keyframes bounceRotate {
+  0%   { transform: scale(1) rotate(0deg); }
+  25%  { transform: scale(1.15) rotate(1deg); }
+  50%  { transform: scale(1.25) rotate(1deg); }
+  75%  { transform: scale(1.15) rotate(-1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.toggled-img {
+    animation: bounce 0.3s infinite ease-in-out;
+}
+
+
+@keyframes bounce {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+/* style.css */
+body, html {
+  background-color: white;
+  height: 100%;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+#emitter {
+  visibility: hidden;
+  background-color: #222;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 40%;
+  left: 0%;
+}
+.dot-container {
+  position:absolute;
+  left:0;
+  top:0;
+  overflow:visible;
+  z-index:5000;
+  pointer-events:none;
+}
+.dot {
+  position: absolute;
+  pointer-events: none; /*performance optimization*/
+}
+
+
+
