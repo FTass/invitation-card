@@ -57,15 +57,15 @@
   }
 
   25% {
-    transform: scale(1.05) rotate(1deg);
+    transform: scale(1.02) rotate(1deg);
   }
 
   50% {
-    transform: scale(1.10) rotate(1deg);
+    transform: scale(1.05) rotate(1deg);
   }
 
   75% {
-    transform: scale(1.05) rotate(-1deg);
+    transform: scale(1.02) rotate(-1deg);
   }
 
   100% {
